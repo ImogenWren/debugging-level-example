@@ -3,6 +3,8 @@ Example of debugging message level implementation using preprocessor C++
 - Useful for inclusion into libaries that may wish to include debugging messages without always including additional memory intensive cstrings
 
 
+
+## debugging.h header
 ```
 // Define the debugging levels
 #define NONE 0                  
@@ -11,12 +13,17 @@ Example of debugging message level implementation using preprocessor C++
 #define WARNING 3
 #define INFO 4
 
+```
+
+## Include in your library headers to use
+```
+#include <debugging.h>
 
 // Debug level defines the lowest level of debug messages that will be printed
 #define DEBUG_LEVEL FATAL
 ```
 
-
+## Defining debug level for individual messages using pre-processor directives
 ```
 
 #if DEBUG_LEVEL >= NONE                // This will always print a debug even if they are off
@@ -39,9 +46,9 @@ Example of debugging message level implementation using preprocessor C++
   Serial.println("DEBUG INFO");
 #endif
 
-
 ```
 
+## Usage
 - Typical operation would have debugging set to ERROR or FATAL
 - INFO useful for adding additional context to operation during development
 - WARNING for less memory intensive tasks that may wish to have greater understanding of program
