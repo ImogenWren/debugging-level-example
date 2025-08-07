@@ -43,4 +43,6 @@ Example of debugging message level implementation using preprocessor C++
 ```
 
 - Typical operation would have debugging set to ERROR or FATAL
-- INFO useful for adding additional context to operation during development 
+- INFO useful for adding additional context to operation during development
+- WARNING for less memory intensive tasks that may wish to have greater understanding of program
+- NONE useful for situations where any excess memory useage is deletarious
