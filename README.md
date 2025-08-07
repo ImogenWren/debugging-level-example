@@ -1,5 +1,6 @@
 # debugging-level-example
 Example of debugging message level implementation using preprocessor C++
+- Useful for inclusion into libaries that may wish to include debugging messages without always including additional memory intensive cstrings
 
 
 ```
