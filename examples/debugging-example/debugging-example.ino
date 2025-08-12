@@ -7,23 +7,23 @@ void setup() {
 
 
 
-#if DEBUG_LEVEL >= FATAL
+#if DEBUG_LEVEL >= DEBUG_FATAL
   Serial.println("DEBUG FATAL");
 #endif
-#if DEBUG_LEVEL >= ERROR
+#if DEBUG_LEVEL >= DEBUG_ERROR
   Serial.println("DEBUG ERROR");
 #endif
-#if DEBUG_LEVEL >= WARNING
+#if DEBUG_LEVEL >= DEBUG_WARNING
   Serial.println("DEBUG WARNING");
 #endif
-#if DEBUG_LEVEL >= INFO
+#if DEBUG_LEVEL >= DEBUG_INFO
   Serial.println("DEBUG INFO");
 #endif
 
 delay(5000);
 
 // This will always print a debug even if they are off, but still gives means for globally disabling by setting debug level to 5
-#if DEBUG_LEVEL >= NONE
+#if DEBUG_LEVEL >= DEBUG_NONE
   Serial.println("DEBUG NONE");
 #endif
 

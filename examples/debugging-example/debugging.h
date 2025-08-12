@@ -17,16 +17,16 @@
 // Simple method for directing pre-processor to enable and disable different levels of debugging message
 
 
-#define NONE 0
-#define FATAL 1
-#define ERROR 2
-#define WARNING 3
-#define INFO 4
+#define DEBUG_NONE 0   // changed these names to avoid conflict with existing programmes
+#define DEBUG_FATAL 1
+#define DEBUG_ERROR 2
+#define DEBUG_WARNING 3
+#define DEBUG_INFO 4
 
 
 
 // Debug level defines the lowest level of debug messages that will be printed
-// #define DEBUG_LEVEL FATAL    // Define this in the header or .ino file
+// #define DEBUG_LEVEL FATAL    // Define this in the header file
 
 
 /*  Example for how to define a debug message at a specific level
